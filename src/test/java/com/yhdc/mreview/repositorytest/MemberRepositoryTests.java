@@ -1,16 +1,14 @@
 package com.yhdc.mreview.repositorytest;
 
-import java.util.stream.IntStream;
+import com.yhdc.mreview.model.Member;
+import com.yhdc.mreview.repository.MemberRepository;
+import com.yhdc.mreview.repository.ReviewRepository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Commit;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.yhdc.mreview.model.Member;
-import com.yhdc.mreview.repository.MemberRepository;
-import com.yhdc.mreview.repository.ReviewRepository;
 
 @SpringBootTest
 public class MemberRepositoryTests {

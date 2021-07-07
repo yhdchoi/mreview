@@ -1,16 +1,14 @@
 package com.yhdc.mreview.repositorytest;
 
 import java.util.List;
-import java.util.stream.IntStream;
+
+import com.yhdc.mreview.model.Movie;
+import com.yhdc.mreview.model.Review;
+import com.yhdc.mreview.repository.ReviewRepository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import com.yhdc.mreview.model.Member;
-import com.yhdc.mreview.model.Movie;
-import com.yhdc.mreview.model.Review;
-import com.yhdc.mreview.repository.ReviewRepository;
 
 @SpringBootTest
 public class ReviewRepositoryTests {
@@ -41,7 +39,7 @@ public class ReviewRepositoryTests {
 	@Test
 	public void testGetMovieReviews() {
 		
-		Movie movie = Movie.builder().mvno(6L).build();
+		Movie movie = Movie.builder().mno(6L).build();
 		
 		List<Review> result = reviewRepository.findByMovie(movie);
 		

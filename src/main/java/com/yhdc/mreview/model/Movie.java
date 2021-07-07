@@ -28,7 +28,7 @@ public class Movie {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long mvno;
+	private Long mno;
 	
 	private String title;
 	
