@@ -34,9 +34,9 @@ public class Movie {
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyy-MM-dd HH:mm")
 	@CreationTimestamp
-	private LocalDateTime created;
+	private LocalDateTime regDate;
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyy-MM-dd HH:mm")
 	@UpdateTimestamp
-	private LocalDateTime updated;
+	private LocalDateTime modDate;
 }
